@@ -21,7 +21,7 @@ class Place(BaseModel):
         longitude (float): The longitude coordinate of the place's location.
         amenity_ids (list): A list of amenity IDs associated with the place.
     """
-    def __init__(self, *args, **args):
+    def __init__(self, *args, **kwargs):
         """initialize new instance of place"""
         super().__init__(*args, **kwargs)
 

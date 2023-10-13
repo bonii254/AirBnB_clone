@@ -58,7 +58,7 @@ class HBNBCommand(cmd.Cmd):
         obj.save()
         print(obj.id)
 
-    def d0_show(self, args):
+    def do_show(self, args):
         """
         Prints the string representation of an instance based on the
         class name and id.
@@ -137,6 +137,7 @@ class HBNBCommand(cmd.Cmd):
             if args[0] == i["__class__"]:
                 instances += 1
         print(instances)
+        
 
     def do_update(self, args):
         """
@@ -213,5 +214,5 @@ class HBNBCommand(cmd.Cmd):
             if command in calls.keys():
                 return calls[others[0]](string)
 
-    if __name__ == '__main__':
-        HBNBCommand().cmdloop()
+if __name__ == '__main__':
+    HBNBCommand().cmdloop()
