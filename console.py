@@ -137,7 +137,6 @@ class HBNBCommand(cmd.Cmd):
             if args[0] == i["__class__"]:
                 instances += 1
         print(instances)
-        
 
     def do_update(self, args):
         """
@@ -213,6 +212,7 @@ class HBNBCommand(cmd.Cmd):
             string = args[0] + " " + " ".join(others[1:])
             if command in calls.keys():
                 return calls[others[0]](string)
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()

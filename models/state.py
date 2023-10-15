@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# states class
+""" states module"""
 
 from models.base_model import BaseModel
 
