@@ -1,5 +1,7 @@
-#!/usr/bin/env python3
-# place class
+#!/usr/bin/python3
+"""
+place class that inherits from BaseModel.
+"""
 
 from models.base_model import BaseModel
 

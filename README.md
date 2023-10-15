@@ -86,6 +86,62 @@ More Info
 Execution
 
 works in interactive mode:
+=======
+Usage
+How to start the interpreter: First, we clone this repo:
+
+$ git clone https://github.com/aliceada96/AirBnB_clone.git
+$
+Then we cd into AirBnb directory:
+
+$ cd AirBnB
+$
+We can start the command interpreter interactively:
+
+$ ./console.py
+(hbnb)
+To exit the console we can use the command quit or ctrl + D
+
+(hbnb) quit
+$
+To get the available list of commands we can enter 'help' onto the CLI.
+
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  all  count  create  destroy  help  quit  show  update
+
+(hbnb) 
+We can get more information on a command e.g.,
+
+(hbnb) help count
+Print number of objects from class.
+(hbnb)
+We can create an instance of a class, for example:
+
+(hbnb) create BaseModel
+f8284b8a-27fd-413e-bc0f-e20ae89c17b1
+(hbnb)
+Inspect an instance of a class:
+
+(hbnb) show BaseModel f8284b8a-27fd-413e-bc0f-e20ae89c17b1
+[BaseModel] (f8284b8a-27fd-413e-bc0f-e20ae89c17b1) ({'id': 'f8284b8a-27fd-413e-bc0f-e20ae89c17b1', 'created_at': datetime.datetime(2023, 10, 15, 21, 27, 18, 991998), 'updated_at': datetime.datetime(2023, 10, 15, 21, 27, 18, 992046)})
+
+
+(hbnb)
+Update an instance of a class with various attributes:
+
+(hbnb) update BaseModel f8284b8a-27fd-413e-bc0f-e20ae89c17b1 name bonii
+(hbnb) show BaseModel f8284b8a-27fd-413e-bc0f-e20ae89c17b1
+[BaseModel] (f8284b8a-27fd-413e-bc0f-e20ae89c17b1) ({'id': 'f8284b8a-27fd-413e-bc0f-e20ae89c17b1', 'created_at': datetime.datetime(2023, 10, 15, 21, 27, 18, 991998), 'updated_at': datetime.datetime(2023, 10, 15, 21, 28, 46, 959895), 'name': 'bobii'})
+(hbnb)
+Delete an instance of a class:
+
+(hbnb) destroy BaseModel f8284b8a-27fd-413e-bc0f-e20ae89c17b1
+(hbnb) show BaseModel f8284b8a-27fd-413e-bc0f-e20ae89c17b1
+** no instance found **
+(hbnb)
 
 $ ./console.py
 (hbnb) help
