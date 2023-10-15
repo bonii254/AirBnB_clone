@@ -1,6 +1,6 @@
-#!/usr/bin/env python3
-# the entry point of the command interpreter
-
+#!/usr/bin/python3
+""" the entry point of the command interpreter
+"""
 import cmd
 import re
 import shlex

@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
-# class User that inherits from BaseModel
+#!/usr/bin/python3
+
+""" class User that inherits from BaseModel """
 
 from models.base_model import BaseModel
 
@@ -15,7 +16,7 @@ class User(BaseModel):
     """
     def __init__(self, *args, **kwargs):
         """Initialize a new User instance."""
-        super().__init__(*args, **kwar0gs)
+        super().__init__(*args, **kwargs)
 
     email = ""
     password = ""
