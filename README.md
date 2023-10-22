@@ -50,6 +50,43 @@ Here are some of the basic commands you can use in the AirBnB clone console:
 For a full list of available commands and their usage, you can use the help command within the console.
 Examples
 
+Here are a few examples of how to use the console:
+
+    Create a new user:
+
+sql
+
+(hbnb) create User
+
+    Show details of a user:
+
+sql
+
+(hbnb) show User <user_id>
+
+    List all available users:
+
+scss
+
+(hbnb) all User
+
+    Update a user's information:
+
+sql
+
+(hbnb) update User <user_id> first_name "John"
+
+    Delete a user:
+
+php
+
+(hbnb) destroy User <user_id>
+
+More Info
+Execution
+
+works in interactive mode:
+=======
 Usage
 How to start the interpreter: First, we clone this repo:
 
